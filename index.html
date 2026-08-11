@@ -662,23 +662,23 @@ section{ position:relative; padding:88px 0; }
       technologies. Every project starts with the same question: <em>how do we
       make this feel alive without getting in the user's way?</em></p>
 
-      <div class="about-pillars" style="opacity:1 !important;">
-        <div class="pillar" style="opacity:1 !important;" data-fade>
+      <div class="about-pillars">
+        <div class="pillar" style="opacity:1 !important;">
           <span class="pillar-index">01</span>
           <h3>Experience</h3>
           <p>3+ years in software houses, building for real clients.</p>
         </div>
-        <div class="pillar" style="opacity:1 !important;" data-fade>
+        <div class="pillar" style="opacity:1 !important;">
           <span class="pillar-index">02</span>
           <h3>Philosophy</h3>
           <p>Pixel-perfect first, then make it move.</p>
         </div>
-        <div class="pillar" data-fade>
+        <div class="pillar">
           <span class="pillar-index">03</span>
           <h3>Passion</h3>
           <p>Obsessed with the details no one asks for.</p>
         </div>
-        <div class="pillar" data-fade>
+        <div class="pillar">
           <span class="pillar-index">04</span>
           <h3>Clean UI</h3>
           <p>Interfaces that get out of the user's way.</p>
@@ -1137,10 +1137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* About pillars stagger */
-    gsap.from('.pillar', {
-      opacity: 0, y: 24, duration: .7, ease: 'power3.out', stagger: .12,
-      scrollTrigger: { trigger: '.about-pillars', start: 'top 85%' }
-    });
+   
 
     /* Stat counters */
     document.querySelectorAll('.stat-num').forEach(el => {
